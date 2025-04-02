@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+    --color-mine-shaft: #3d3d3d;
+    --color-mine_shaft-medium: #343434;
+    --color-mine-shaft-dark: #2f2f2f;
+}
+
+* {
+    @apply select-none;
+    -webkit-user-drag: none;
+}
+
+html,
+body {
+    @apply h-full;
+    @apply overflow-hidden;
+    @apply rounded-md;
+}
+body {
+    @apply text-neutral-300;
+    @apply bg-mine-shaft-dark;
+    @apply border-2 border-mine-shaft;
+}
+
+.titlebar {
+    @apply bg-mine_shaft-medium;
+    @apply flex justify-end gap-1;
+    @apply h-8;
+}
+.titlebar-button {
+    @apply flex justify-center items-center;
+    @apply w-8 h-8;
+    @apply rounded-xl;
+    @apply transition-colors ease-in duration-100;
+}
+.titlebar-button:hover {
+    @apply bg-mine-shaft;
+}

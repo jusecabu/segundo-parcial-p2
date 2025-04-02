@@ -1,14 +1,26 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri + Preact + Typescript</title>
-  </head>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Segundo parcial programación</title>
+    </head>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <body>
+        <div data-tauri-drag-region class="titlebar">
+            <div class="titlebar-button" id="titlebar-minimize">
+                <i class="ti ti-minus"></i>
+            </div>
+            <div class="titlebar-button" id="titlebar-maximize">
+                <i class="ti ti-crop-1-1"></i>
+            </div>
+            <div class="titlebar-button" id="titlebar-close">
+                <i class="ti ti-x"></i>
+            </div>
+        </div>
+        </div>
+        <div id="root"></div>   
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
 </html>
